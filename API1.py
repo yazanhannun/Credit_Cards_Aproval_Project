@@ -104,8 +104,6 @@ def get_data():
     data = data.query(f"DATE>= '{date1}'")    
   
     # logging in using private key
-    cred = credentials.Certificate('project-ba02d-firebase-adminsdk-7uwsq-7d185bc609.json')
-
     firebase_admin.initialize_app(cred, {'databaseURL' : 'https://project-ba02d-default-rtdb.firebaseio.com/', 
     'httpTimeout' : 30})
 
