@@ -12,3 +12,5 @@ CustomerID = 72
 
 # Send a get request 
 x = requests.get(url, params={'req':req, 'date': date, 'CustomerID':CustomerID})
+
+# Send
